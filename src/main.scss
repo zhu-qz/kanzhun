@@ -25,7 +25,11 @@ html, body, #root, .container {
         @include flex-direction(column);
         @include justify-content();
         @include align-items();
+        @include text-color(#666);
+
+      &.active {
         @include text-color(#000);
+      }
       }
     }
   }
