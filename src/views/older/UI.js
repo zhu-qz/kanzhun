@@ -80,6 +80,80 @@ class Com extends Component {
               </li>
             </ul>
           </div>
+          <div className = 'forhelp'>
+            <div className = 'head'>
+              <div className = 'top'>
+                <div className = 'left'>求助问题</div>
+                <div className = 'right'>
+                  <ul>
+                    <li>推荐</li>
+                    <li>最新</li>
+                    <li>公司相关</li>
+                  </ul>
+                </div>
+              </div>
+              <div className = 'bottom'>以下问题正在急切寻求帮助</div>
+            </div>
+            <div className = 'cont'>
+              <div className = 'yes'>
+                <div className = 'people'>
+                  <div className = 'left'>
+                    <div className = 'img'></div>
+                    <span>卢金桥</span>
+                  </div>
+                  <div className = 'right'>创建于昨天</div>
+                </div>
+                <div className = 'problem'>
+                  <div className = 'info'>错过了秋招，是不是春招没有什么好的企业了?</div>
+                  <div className = 'tag'>#职业规划</div>
+                </div>
+              </div>
+              <ul>
+                <li>
+                  <div className = 'no'>
+                    <div className = 'people'>
+                      <div className = 'head'>
+                        <div className = 'left'>11位老鸟认领</div>
+                        <div className = 'right'>认领</div>
+                      </div>
+                      <div className = 'bottom'>
+                        <div className = 'left'>
+                          <div className = 'img'></div>
+                          <span>卢金桥</span>
+                        </div>
+                        <div className = 'right'>创建于1天前</div>
+                      </div>
+                    </div>
+                    <div className = 'problem'>
+                      <div className = 'info'>错过了秋招，是不是春招没有什么好的企业了?</div>
+                      <div className = 'tag'>#职业规划</div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div className = 'no'>
+                    <div className = 'people'>
+                      <div className = 'head'>
+                        <div className = 'left'>11位老鸟认领</div>
+                        <div className = 'right'>认领</div>
+                      </div>
+                      <div className = 'bottom'>
+                        <div className = 'left'>
+                          <div className = 'img'></div>
+                          <span>卢金桥</span>
+                        </div>
+                        <div className = 'right'>创建于1天前</div>
+                      </div>
+                    </div>
+                    <div className = 'problem'>
+                      <div className = 'info'>错过了秋招，是不是春招没有什么好的企业了?</div>
+                      <div className = 'tag'>#职业规划</div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
