@@ -16,7 +16,10 @@ html, body, #root, .container {
   @include align-items();
   @include font-size(.18rem);
   .left {
-    @include font-size(.16rem);
+    @include font-size(.24rem);
+  }
+  .right {
+    @include font-size(.24rem);
   }
 }
 

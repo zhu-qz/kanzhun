@@ -1,0 +1,94 @@
+@import '@/lib/reset.scss';
+* { touch-action: pan-y }
+html, body, #root, .container {
+  @include rect(100%, 100%);
+}
+.content {
+  @include rect(100%, 100%);
+  overflow: auto;
+}
+
+.data {
+  .top {
+    @include rect(100%, 1.54rem);
+    @include flexbox();
+    @include justify-content(space-between);
+    @include align-items();
+    @include padding(0 .1rem 0 .3rem);
+    .left {
+      @include flexbox();
+      @include align-items();
+      .img {
+        @include rect(100px, 100px);
+        @include border-radius(50%);
+        @include background-color(#ECECEC);
+      }
+      .my {
+        @include font-size(.14rem);
+        @include text-color(#A29F9F);
+        @include padding(0 0 0 .1rem);
+      }
+    }
+    .right {
+      @include font-size(16px);
+      @include text-color(#5E5E5E);
+    }
+  }
+  .bottom {
+    @include rect(100%, .9rem);
+    @include background-color(#ECECEC);
+    @include flexbox();
+    @include justify-content(space-between);
+    @include align-items();
+    @include padding(0 .1rem 0 .3rem);
+    .left {
+      p {
+        @include font-size(14px);
+        @include text-color(#888787);
+      }
+      span {
+        @include display(inline-block);
+        width: 1.6rem;
+        @include font-size(12px);
+        @include text-color(#BBB9B9);
+      }
+    }
+    .right {
+      @include rect(1.1rem, .34rem);
+      @include border-radius(.26rem);
+      @include background-color(#ccc);
+      @include font-size(14px);
+      @include text-color(#918E8E);
+      @include text-align(center);
+      @include line-height(.34rem);
+    }
+  }
+}
+
+.mycontent {
+  @include rect(100%, auto);
+  .top {
+    @include rect(100%, 2.19rem);
+    @include background-color(#ECECEC);
+    @include margin(.03rem 0 .11rem 0);
+    ul {
+      li {
+        // @include rect(100%, .5rem);
+        @include padding(.15rem 0 0 .26rem);
+        // border-bottom: 1px solid #BBBBBB;
+        @include flexbox();
+        @include align-items();
+        // &.te {
+        //   border-bottom: none;
+        // }
+        .iconfont {
+          @include font-size(.24rem);
+          @include text-color(#A29F9F);
+        }
+        p {
+          @include padding(0 0 0 .24rem);
+        }
+      }
+    }
+  }
+}
