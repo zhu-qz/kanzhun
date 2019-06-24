@@ -152,8 +152,8 @@ html, body, #root, .container {
   }
   .forhelp {
     @include margin(.3rem 0 0 0);
-    .head {
-    padding:0 .17rem;
+    .myhead {
+      padding:0 .17rem;
       .top {
         @include flexbox();
         @include justify-content(space-between);
@@ -240,7 +240,7 @@ html, body, #root, .container {
               @include background-color(#EAEAEA);
               @include text-align(center);
               @include font-size(14px);
-              @include text-color(#101010);
+              @include text-color(#999);
             }
           }
           .bottom {

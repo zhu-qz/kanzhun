@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './older.scss';
+import '@/style/older.scss';
 
 class Com extends Component {
   componentDidMount () {
@@ -81,7 +81,7 @@ class Com extends Component {
             </ul>
           </div>
           <div className = 'forhelp'>
-            <div className = 'head'>
+            <div className = 'myhead'>
               <div className = 'top'>
                 <div className = 'left'>求助问题</div>
                 <div className = 'right'>
