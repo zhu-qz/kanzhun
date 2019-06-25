@@ -9,7 +9,7 @@ body,
     @include rect(100%, 100%);
 }
 
-.box {
+.box-h {
     @include rect(100%, 100%);
     overflow: auto;
     @include rect(100%, 19.5rem);
@@ -31,7 +31,7 @@ body,
     }
 }
 
-.search {
+.search-h {
     @include rect(80%, .3rem);
     @include margin(2.16rem 0 0 10%);
     background: #f4f4f4;

@@ -7,13 +7,13 @@ class Com extends Component {
   }
   render () {
     return (
-      <div className='box'>
+      <div className='box-h'>
         <div>
             <div className = 'swipimg'>
               <p>这是轮播图</p>
             </div>
             
-            <div className='search'>
+            <div className='search-h'>
                 <input></input>
             </div>
             <div className='com-list'>

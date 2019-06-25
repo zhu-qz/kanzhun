@@ -1,0 +1,135 @@
+@import '@/lib/reset.scss';
+* { touch-action: pan-y }
+html, body, #root, .container {
+  @include rect(100%, 100%);
+}
+.content {
+  @include rect(100%, 100%);
+  overflow: auto;
+}
+
+.head {
+  @include rect(100%, .42rem);
+  @include padding(0 .06rem);
+  @include flexbox();
+  @include justify-content(space-between);
+  @include align-items();
+  @include font-size(.18rem);
+  .left {
+    @include font-size(.24rem);
+  }
+  .right {
+    @include font-size(.24rem);
+  }
+}
+
+.search {
+  @include rect(100%, 1.65rem);
+  @include background-color(#EEEEEE);
+  border-bottom:1px solid #D0CFCF;
+  .sear {
+    @include rect(100%, .34rem);
+    border-bottom:1px solid #D0CFCF;
+    .box {
+      @include rect(auto, .25rem);
+      @include margin(.09rem  .05rem);
+      @include background-color(#fff);
+      @include border-radius(.37rem);
+      @include text-align(center);
+      @include font-size(14px);
+      @include text-color(#999);
+      @include line-height(.25rem);
+    }
+  }
+  .things {
+    padding: .19rem .05rem 0 .15rem;
+    @include flexbox();
+    @include justify-content(space-between);
+    @include align-items();
+    .left {
+      .img {
+        float:left;
+        @include rect(50px, 50px);
+        @include border-radius(50%);
+        @include background-color(#f8f8f8);
+      }
+      .box {
+        float:left;
+        @include padding(0 0 0 .1rem);
+        .top {
+          @include font-size(14px);
+          @include text-color(#666);
+        } 
+        .center {
+          @include padding(.1rem 0);
+          @include font-size(14px);
+          @include text-color(#B2B2B2);
+        } 
+        .bottom {
+          li {
+            float: left;
+            @include rect(.3rem, .3rem);
+            @include background-color(#f8f8f8);
+            @include border-radius(50%);
+            &.te {
+              @include margin(0 .2rem);
+            }
+          }
+        }   
+      }
+    }
+  }
+}
+
+.mycont {
+  ul {
+    @include padding(0 .05rem 0 .05rem);
+    li {
+      @include rect(100%, .78rem);
+      @include padding(.14rem 0 0 .1rem);
+      border-bottom:1px solid #D0CFCF;
+      .img {
+        float: left;
+        @include rect(50px, 50px);
+        @include border-radius(50%);
+        @include background-color(#EEEEEE);
+      }
+      .myinfo {
+        float: left;
+        @include padding(0 0 0 .1rem);
+        .top {
+          @include flexbox();
+          @include padding(0 0 .1rem 0);
+          p {
+            @include font-size(14px);
+            @include text-color(#666);
+            @include padding(0 .07rem 0 0);
+          }
+          span {
+            @include rect(.46rem, .2rem);
+            @include font-size(14px);
+            @include text-color(#B2B2B2);
+            @include border(1px solid #B2B2B2);
+            @include text-align(center);
+            &::after {
+            @include border-radius(.19rem);
+            }
+          }
+        }
+        .bottom {
+          @include font-size(14px);
+          @include text-color(#B2B2B2);
+        }
+      }
+    }
+  }
+}
+
+.add {
+  @include rect(2.9rem, .42rem);
+  @include background-color(#e0e0e0);
+  @include font-size(14px);
+  @include text-align(center);
+  @include line-height(.42rem);
+  @include margin(.4rem .42rem 0 .43rem);
+}
