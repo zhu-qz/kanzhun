@@ -1,0 +1,76 @@
+@import '@/lib/reset.scss';
+* { touch-action: pan-y }
+html, body, #root, .container {
+  @include rect(100%, 100%);
+}
+.content {
+  @include rect(100%, 100%);
+  overflow: auto;
+  background: #4A94F9;
+}
+
+.top {
+  @include rect(100%, auto);
+  padding-top: .66rem;
+  @include text-align();
+  .img {
+    margin:0 auto;
+    @include rect(2rem, 1.2rem);
+    @include background-color(#E1E1E1);
+  }
+  p {
+    @include font-size(18px);
+    padding-top: .2rem;
+    @include text-color(#9B9B9B);
+  }
+}
+
+.center {
+  padding-top: .83rem;
+  // .tellogin {
+    form {
+      @include flexbox();
+      @include align-items();
+      @include flex-direction(column);
+      position: relative;
+      input {
+        @include rect(3.4rem, .5rem);
+        @include background-color(#E1E1E1);
+        @include text-align(center);
+        @include border-radius(.54rem);
+        outline: none;
+        border:none;
+        margin: 0 auto;
+        margin-bottom: .3rem;
+        @include font-size(18px);
+        @include text-color(#B3B3B3);
+      }
+      span {
+        position: absolute;
+        right: .5rem;
+        top: .95rem;
+        border-left: .01rem solid #FFFFFF;
+        padding-left: .1rem;
+      }
+    }
+    .enter {
+      @include rect(3.4rem, .5rem);
+      @include background-color(#E1E1E1);
+      @include text-align(center);
+      @include border-radius(.54rem);
+      @include margin(.6rem 0 0 .18rem);
+      @include line-height(.5rem);
+      @include font-size(20px);
+      @include text-color(#A6A6A6);
+    }
+    .foot {
+      margin-top: .4rem;
+      padding: 0 .18rem;
+      @include flexbox();
+      @include justify-content(space-between);
+      @include align-items();
+      @include font-size(14px);
+      @include text-color(#A6A6A6);
+    }
+  }
+// }
