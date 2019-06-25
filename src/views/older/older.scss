@@ -1,292 +1,297 @@
 @import '@/lib/reset.scss';
-* { touch-action: pan-y }
-html, body, #root, .container {
-  @include rect(100%, 100%);
+* {
+    touch-action: pan-y
 }
+
+html,
+body,
+#root,
+.container {
+    @include rect(100%, 100%);
+}
+
 .content {
-  @include rect(100%, 100%);
-  overflow: auto;
+    @include rect(100%, 100%);
+    overflow: auto;
 }
 
 .help {
-  @include rect(100%, 1.4rem);
-  @include background-color(#E8E8E8);
-  padding:.2rem 0;
-  .top {
-    @include flexbox();
-    @include justify-content();
-    @include text-color(#5E5E5E);
-    @include align-items(center);
-    .online {
-      // @include rect(1rem, auto);
-      @include flex(1);
-      @include padding(0 0 0 .4rem);
-      @include font-size(.14rem);
+    @include rect(100%, 1.4rem);
+    @include background-color(#E8E8E8);
+    padding: .2rem 0;
+    .top {
+        @include flexbox();
+        @include justify-content();
+        @include text-color(#5E5E5E);
+        @include align-items(center);
+        .online {
+            // @include rect(1rem, auto);
+            @include flex(1);
+            @include padding(0 0 0 .4rem);
+            @include font-size(.14rem);
+        }
+        .today {
+            // @include rect(1rem, auto);
+            @include flex(1);
+            @include padding(0 0 0 .5rem);
+            @include font-size(.14rem);
+        }
+        .center {
+            @include rect(50px, 50px);
+            @include border-radius(50%);
+            @include background-color(#D5D5D5);
+            @include margin(0 0 0 -.2rem);
+        }
     }
-    .today {
-      // @include rect(1rem, auto);
-      @include flex(1);
-      @include padding(0 0 0 .5rem);
-      @include font-size(.14rem);
+    .bottom {
+        @include rect(100%, .3rem);
+        @include flexbox();
+        @include justify-content(center);
+        @include margin(.2rem 0 0 0);
+        p {
+            @include rect(auto, .3rem);
+            @include border-radius(.4rem);
+            @include text-color(#939393);
+            @include line-height(.3rem);
+            @include background-color(#D5D5D5);
+            @include padding(0 .2rem);
+            @include font-size(.16rem);
+            @include margin(0 0 0 -.2rem);
+        }
     }
-    .center {
-      @include rect(50px, 50px);
-      @include border-radius(50%);
-      @include background-color(#D5D5D5);
-      @include margin(0 0 0 -.2rem);
-    }
-  }
-  .bottom {
-    @include rect(100%, .3rem);
-    @include flexbox();
-    @include justify-content(center);
-    @include margin(.2rem 0 0 0);
-    p {
-      @include rect(auto, .3rem);
-      @include border-radius(.4rem);
-      @include text-color(#939393);
-      @include line-height(.3rem);
-      @include background-color(#D5D5D5);
-      @include padding(0 .2rem);
-      @include font-size(.16rem);
-      @include margin(0 0 0 -.2rem);
-    }
-  }
 }
 
 .recommend {
-  @include rect(100%, 2.6rem);
-  @include background-color(#F8F8F8);
-  padding:.1rem .17rem .3rem ;
-  .header {
-    @include rect(100%, .2rem);
-    .top {
-      @include flexbox();
-      @include justify-content(space-between);
-      .left {
-        @include font-size(.18rem);
-        @include font-weight(700);
-      }
-      .more {
-        @include font-size(.16rem);
-      }
-    }
-    .bottom {
-      @include padding(.1rem 0 0 0);
-      p {
-        @include font-size(.14rem);
-      }
-    }
-  }
-  .cont {
-    @include margin(.6rem 0 0 0);
-    @include rect(100%, auto);
-    ul {
-      @include rect(100%, 1.4rem);
-      @include flexbox();
-      @include justify-content(space-between);
-      li {
+    @include rect(100%, 2.6rem);
+    @include background-color(#F8F8F8);
+    padding: .1rem .17rem .3rem;
+    .header {
+        @include rect(100%, .2rem);
+        .top {
             @include flexbox();
-            @include flex-direction(column);
-            @include align-items();
-            
-        .img {
-          margin:0;
-          @include rect(.6rem, .6rem);
-          @include border-radius(50%);
-          @include background-color(#DFDFDF);
+            @include justify-content(space-between);
+            .left {
+                @include font-size(.18rem);
+                @include font-weight(700);
+            }
+            .more {
+                @include font-size(.16rem);
+            }
         }
-        .name {
-          @include text-align(center);
-          padding:.15rem 0 .1rem;
-          @include text-color(#5E5E5E);
-          @include font-size(.15rem);
+        .bottom {
+            @include padding(.1rem 0 0 0);
+            p {
+                @include font-size(.14rem);
+            }
         }
-        .info {
-          @include rect(.7rem, auto);
-          @include text-align(center);
-          @include text-color(#A8A8A8);
-          @include font-size(.13rem);
-        }
-      }
     }
-  }
+    .cont {
+        @include margin(.6rem 0 0 0);
+        @include rect(100%, auto);
+        ul {
+            @include rect(100%, 1.4rem);
+            @include flexbox();
+            @include justify-content(space-between);
+            li {
+                @include flexbox();
+                @include flex-direction(column);
+                @include align-items();
+                .img {
+                    margin: 0;
+                    @include rect(.6rem, .6rem);
+                    @include border-radius(50%);
+                    @include background-color(#DFDFDF);
+                }
+                .name {
+                    @include text-align(center);
+                    padding: .15rem 0 .1rem;
+                    @include text-color(#5E5E5E);
+                    @include font-size(.15rem);
+                }
+                .info {
+                    @include rect(.7rem, auto);
+                    @include text-align(center);
+                    @include text-color(#A8A8A8);
+                    @include font-size(.13rem);
+                }
+            }
+        }
+    }
 }
 
 .question {
-  @include rect(100%, 3.5rem);
-  @include margin(.2rem 0 0 0);
-  @include background-color(#F8F8F8);
-  .rank {
-    position:relative;
-    top:-.37rem;
-    ul {
-      // @include margin(-.5rem 0 0 0);
-      padding:0 .17rem;
-      @include flexbox();
-      @include justify-content(space-between);
-      li {
-        @include rect(1rem, 1.2rem);
-        @include background-color(#D7D7D7);
-        @include border-radius(.06rem);
-        @include text-align(center);
-        @include padding(.3rem 0 0 0);
-        @include flexbox();
-        @include flex-direction(column);
-        @include align-items();
-        .top {
-          @include font-size(10px);
-          @include text-color(#5E5E5E);
-        }
-        .cen{
-          @include font-size(16px);
-          @include text-color(#5E5E5E);
-          @include padding(.05rem 0);
-        }
-        .img {
-          @include rect(.47rem, .28rem);
-          @include background-color(#efefef);
-        }
-      }
-    }
-  }
-  .forhelp {
-    @include margin(.3rem 0 0 0);
-    .head {
-    padding:0 .17rem;
-      .top {
-        @include flexbox();
-        @include justify-content(space-between);
-        @include padding(0 0 .1rem 0);
-        .left {
-          @include font-size(16px);
-          @include text-color(#848484);
-        }
-        .right {
-          @include font-size(12px);
-          ul {
+    @include rect(100%, 3.5rem);
+    @include margin(.2rem 0 0 0);
+    @include background-color(#F8F8F8);
+    .rank {
+        position: relative;
+        top: -.37rem;
+        ul {
+            // @include margin(-.5rem 0 0 0);
+            padding: 0 .17rem;
             @include flexbox();
-            @include justify-content();
+            @include justify-content(space-between);
             li {
-              @include padding(0 .1rem);
+                @include rect(1rem, 1.2rem);
+                @include background-color(#D7D7D7);
+                @include border-radius(.06rem);
+                @include text-align(center);
+                @include padding(.3rem 0 0 0);
+                @include flexbox();
+                @include flex-direction(column);
+                @include align-items();
+                .top {
+                    @include font-size(10px);
+                    @include text-color(#5E5E5E);
+                }
+                .cen {
+                    @include font-size(16px);
+                    @include text-color(#5E5E5E);
+                    @include padding(.05rem 0);
+                }
+                .img {
+                    @include rect(.47rem, .28rem);
+                    @include background-color(#efefef);
+                }
             }
-          }
         }
-      }
-      .bottom {
-        @include font-size(12px);
-        @include text-color(#9B9B9B);
-      }
     }
-    .cont {
-      @include padding(.2rem 0 0 0);
-      .yes {
-        .people {
-          padding:0 .17rem;
-          @include flexbox();
-          @include justify-content(space-between);
-          @include align-items();
-          .left {
-            @include flexbox();
-            @include justify-content(space-between);
-            @include align-items();
-            .img {
-              @include rect(50px, 50px);
-              @include border-radius(50%);
-              @include background-color(#D5D5D5 );
+    .forhelp {
+        @include margin(.3rem 0 0 0);
+        .head {
+            padding: 0 .17rem;
+            .top {
+                @include flexbox();
+                @include justify-content(space-between);
+                @include padding(0 0 .1rem 0);
+                .left {
+                    @include font-size(16px);
+                    @include text-color(#848484);
+                }
+                .right {
+                    @include font-size(12px);
+                    ul {
+                        @include flexbox();
+                        @include justify-content();
+                        li {
+                            @include padding(0 .1rem);
+                        }
+                    }
+                }
             }
-            span {
-              @include font-size(14px);
-              @include text-color(#9B9B9B);
-              @include padding(0 0 0 .05rem);
-            }
-          }
-          .right {
-            @include font-size(10px);
-            @include text-color(#C3C3C3);
-          }
-        }
-        .problem {
-          @include rect(100%, .87rem);
-          @include background-color(#EAEAEA);
-          @include margin(.2rem 0 0 0);
-          padding:0 .17rem;
-          .info {
-            @include font-size(12px);
-            @include text-color(#9B9B9B);
-            @include padding(.2rem 0 .15rem 0);
-          }
-          .tag {
-            @include font-size(10px);
-            @include text-color(#B9B9B9);
-          }
-        }
-      }
-      .no {
-        .people {
-          @include padding(.13rem 0 0 0);
-          .head {
-            @include flexbox();
-            @include justify-content(space-between);
-            @include align-items();
-            .left {
-              @include font-size(12px);
-              @include text-color(#979797);
-            }
-            .right {
-              @include rect(.65rem, .25rem);
-              @include line-height(.25rem);
-              @include border-radius(.34rem);
-              @include background-color(#EAEAEA);
-              @include text-align(center);
-              @include font-size(14px);
-              @include text-color(#101010);
-            }
-          }
-          .bottom {
-            padding:0 .17rem;
-            @include margin(.05rem 0);
-            @include flexbox();
-            @include justify-content(space-between);
-            @include align-items();
-            .left {
-              @include flexbox();
-              @include justify-content(space-between);
-              @include align-items();
-              .img {
-                @include rect(50px, 50px);
-                @include border-radius(50%);
-                @include background-color(#D5D5D5 );
-              }
-              span {
-                @include font-size(14px);
+            .bottom {
+                @include font-size(12px);
                 @include text-color(#9B9B9B);
-                @include padding(0 0 0 .05rem);
-              }
             }
-            .right {
-              @include font-size(10px);
-              @include text-color(#C3C3C3);
+        }
+        .cont {
+            @include padding(.2rem 0 0 0);
+            .yes {
+                .people {
+                    padding: 0 .17rem;
+                    @include flexbox();
+                    @include justify-content(space-between);
+                    @include align-items();
+                    .left {
+                        @include flexbox();
+                        @include justify-content(space-between);
+                        @include align-items();
+                        .img {
+                            @include rect(50px, 50px);
+                            @include border-radius(50%);
+                            @include background-color(#D5D5D5);
+                        }
+                        span {
+                            @include font-size(14px);
+                            @include text-color(#9B9B9B);
+                            @include padding(0 0 0 .05rem);
+                        }
+                    }
+                    .right {
+                        @include font-size(10px);
+                        @include text-color(#C3C3C3);
+                    }
+                }
+                .problem {
+                    @include rect(100%, .87rem);
+                    @include background-color(#EAEAEA);
+                    @include margin(.2rem 0 0 0);
+                    padding: 0 .17rem;
+                    .info {
+                        @include font-size(12px);
+                        @include text-color(#9B9B9B);
+                        @include padding(.2rem 0 .15rem 0);
+                    }
+                    .tag {
+                        @include font-size(10px);
+                        @include text-color(#B9B9B9);
+                    }
+                }
             }
-          }
+            .no {
+                .people {
+                    @include padding(.13rem 0 0 0);
+                    .head {
+                        @include flexbox();
+                        @include justify-content(space-between);
+                        @include align-items();
+                        .left {
+                            @include font-size(12px);
+                            @include text-color(#979797);
+                        }
+                        .right {
+                            @include rect(.65rem, .25rem);
+                            @include line-height(.25rem);
+                            @include border-radius(.34rem);
+                            @include background-color(#EAEAEA);
+                            @include text-align(center);
+                            @include font-size(14px);
+                            @include text-color(#101010);
+                        }
+                    }
+                    .bottom {
+                        padding: 0 .17rem;
+                        @include margin(.05rem 0);
+                        @include flexbox();
+                        @include justify-content(space-between);
+                        @include align-items();
+                        .left {
+                            @include flexbox();
+                            @include justify-content(space-between);
+                            @include align-items();
+                            .img {
+                                @include rect(50px, 50px);
+                                @include border-radius(50%);
+                                @include background-color(#D5D5D5);
+                            }
+                            span {
+                                @include font-size(14px);
+                                @include text-color(#9B9B9B);
+                                @include padding(0 0 0 .05rem);
+                            }
+                        }
+                        .right {
+                            @include font-size(10px);
+                            @include text-color(#C3C3C3);
+                        }
+                    }
+                }
+                .problem {
+                    @include rect(100%, .87rem);
+                    @include background-color(#EAEAEA);
+                    @include margin(.2rem 0 0 0);
+                    padding: 0 .17rem;
+                    .info {
+                        @include font-size(12px);
+                        @include text-color(#9B9B9B);
+                        @include padding(.2rem 0 .15rem 0);
+                    }
+                    .tag {
+                        @include font-size(10px);
+                        @include text-color(#B9B9B9);
+                    }
+                }
+            }
         }
-        .problem {
-          @include rect(100%, .87rem);
-          @include background-color(#EAEAEA);
-          @include margin(.2rem 0 0 0);
-          padding:0 .17rem;
-          .info {
-            @include font-size(12px);
-            @include text-color(#9B9B9B);
-            @include padding(.2rem 0 .15rem 0);
-          }
-          .tag {
-            @include font-size(10px);
-            @include text-color(#B9B9B9);
-          }
-        }
-      }
     }
-  }
 }
-
