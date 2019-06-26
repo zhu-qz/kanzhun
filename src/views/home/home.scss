@@ -1,0 +1,270 @@
+@import '@/lib/reset.scss';
+* {
+    touch-action: pan-y
+}
+
+html,
+body,
+#root {
+    @include rect(100%, 100%);
+}
+
+.box-h {
+    @include rect(100%, 100%);
+    overflow: auto;
+    @include rect(100%, 19.5rem);
+    background-color: rgba(255, 255, 255, 1);
+    position: relative;
+}
+
+.swipimg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    @include rect(100%, 1.96rem);
+    background: #828282;
+    p {
+        color: #fff;
+        text-align: center;
+        margin-top: 20%;
+    }
+}
+
+.search-h {
+    @include rect(80%, .3rem);
+    @include margin(2.16rem 0 0 10%);
+    background: #f4f4f4;
+    border: none;
+    border-radius: .15rem;
+    overflow: hidden;
+    input {
+        margin-top: .05rem;
+        display: block;
+        width: 90%;
+        float: right;
+        background: #f4f4f4;
+        border: none;
+    }
+}
+
+.com-list {
+    @include margin(.24rem 0 .2rem 0);
+    ul {
+        padding: 0 .2rem;
+        @include flexbox();
+        @include justify-content(space-between);
+        li {
+            @include flexbox();
+            @include flex-direction(column);
+            border-radius: 50%;
+            justify-content: space-between;
+            @include rect(.60rem, .6rem);
+            background-color: rgba(221, 221, 221, 1);
+            color: rgba(117, 117, 117, 1);
+            font-size: .14rem;
+            text-align: center;
+            font-family: Arial;
+            border: .01rem solid rgba(255, 255, 255, 0);
+            p {
+                text-align: center;
+                vertical-align: middle;
+                font: .14rem/.6rem "Arial";
+                color: #757575;
+            }
+        }
+    }
+}
+
+.introduce {
+    color: #828282;
+    background: #fbfbfb;
+    @include rect(100%, 1.9rem);
+    @include margin(.1rem 0 0 .1rem);
+    .intro-top {
+        @include flexbox();
+        @include justify-content(space-between);
+        overflow: hidden;
+        width: 100%;
+        line-height: .3rem;
+        @include padding(.16rem .28rem 0 .12rem);
+        h3 {
+            font: .2rem/.3rem "SourceHanSansSC-regular";
+            color: #5e5e5e;
+            float: left;
+        }
+        a {
+            float: right;
+            color: #828282;
+            font: .12rem/.3rem "";
+        }
+    }
+    .intro-middle {
+        overflow: hidden;
+        @include margin(.2rem .29rem 0 .15rem);
+        .iml {
+            float: left;
+            width: 1.92rem;
+            h3 {
+                font: .16rem/.24rem 'SourceHanSansSC-regular';
+            }
+             :nth-child(2) {
+                margin-top: .12rem;
+            }
+             :nth-child(3) {
+                margin-top: .09rem;
+            }
+            p {
+                font: .12rem/.18rem 'SourceHanSansSC-regular';
+            }
+        }
+        .imr {
+            @include rect(1.1rem, 100%);
+            float: right;
+            .img {
+                height: .89rem;
+                width: 1.1rem;
+                background: #828282;
+                text-align: center;
+                line-height: .9rem;
+                color: #fff;
+            }
+        }
+    }
+    .sk {
+        margin-left: .15rem;
+        @include rect(1.44rem, .2rem);
+        text-align: center;
+        border: .01rem solid rgba(187, 187, 187, 1);
+        span {
+            font: .12rem/.2rem 'SourceHanSansSC-regular';
+            text-align: left;
+        }
+    }
+}
+
+.com-rank {
+    position: relative;
+    font-family: 'SourceHanSansSC-regular';
+    color: #5e5e5e;
+    @include margin(.1rem .01rem 0 .1rem);
+    background: #fbfbfb;
+    @include rect(100%, 4.7rem);
+    overflow: hidden;
+    h3 {
+        font: .2rem/.3rem 'SourceHanSansSC-regular';
+        @include margin(.16rem 0 0 .14rem)
+    }
+    ul {
+        display: block;
+        margin: 0 auto;
+        display: block;
+        overflow: hidden;
+        li {
+            @include margin(.11rem .14rem .22rem);
+            float: left;
+            width: 1.5rem;
+            text-align: center;
+            overflow: hidden;
+            h3 {
+                text-align: center;
+                font: .14rem/.21rem '';
+            }
+            p {
+                color: #ACAAAA;
+                font: .12rem/.18rem '';
+            }
+            .img {
+                height: 1.05rem;
+                background: #828282;
+                color: #fff;
+                text-align: center;
+                line-height: 1rem;
+            }
+        }
+    }
+    .all-rank {
+        position: absolute;
+        width: 100%;
+        left: .17rem;
+        bottom: .16rem;
+        @include padding(0 .4rem 0 0);
+        a {
+            color: #686767;
+            span {
+                float: left;
+            }
+            i {
+                @include font-size(.24rem);
+                float: right;
+            }
+        }
+    }
+}
+
+.cor-special {
+    @include margin (.1rem 0 0 .1rem);
+    background-color: #fbfbfb;
+    width: 100%;
+    position: relative;
+    padding-bottom: .5rem;
+    .cor-top {
+        width: 100%;
+        overflow: hidden;
+        h3 {
+            font: .2rem/.3rem '';
+            color: #868686;
+            margin: (.14rem 0 0 .17rem);
+        }
+    }
+    .cor-cont {
+        width: 100%;
+        height: 1.05rem;
+        margin-top: .09rem;
+        @include padding(0 .2rem .15rem .17rem);
+        border-bottom: .01rem solid #bbb;
+        position: relative;
+        .cor-l {
+            float: left;
+            width: 1.82rem;
+            p {
+                font: .14rem/.18rem '';
+                color: #8c8c8c;
+            }
+            span {
+                position: absolute;
+                display: block;
+                font: .12rem/.18rem '';
+                bottom: .08rem;
+                color: #ACAAAA;
+            }
+        }
+        .cor-r {
+            float: right;
+            .img {
+                width: 1.34rem;
+                height: .93rem;
+                background-color: #828282;
+                color: #fff;
+                text-align: center;
+                line-height: 1rem;
+            }
+        }
+    }
+    .all-special {
+        position: absolute;
+        width: 100%;
+        left: .17rem;
+        bottom: .16rem;
+        @include padding(0 .4rem 0 0);
+        a {
+            color: #686767;
+            span {
+                float: left;
+            }
+            i {
+                float: right;
+            }
+        }
+    }
+}
