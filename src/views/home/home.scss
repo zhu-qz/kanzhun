@@ -82,6 +82,8 @@ body,
     @include rect(100%, 1.9rem);
     @include margin(.1rem 0 0 .1rem);
     .intro-top {
+        @include flexbox();
+        @include justify-content(space-between);
         overflow: hidden;
         width: 100%;
         line-height: .3rem;
@@ -193,6 +195,7 @@ body,
                 float: left;
             }
             i {
+                @include font-size(.24rem);
                 float: right;
             }
         }

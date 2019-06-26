@@ -97,7 +97,7 @@ class Com extends Component {
                     </li>
                 </ul>
 
-                <div className='all-rank'><a><span>查看全部排行榜</span><i>图标3</i></a></div>
+                <div className='all-rank'><a><span>查看全部排行榜</span><i className='iconfont icon-right'></i></a></div>
             </div>
             <div className='cor-special'>
                 <div className='cor-top'>
