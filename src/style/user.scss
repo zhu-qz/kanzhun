@@ -9,7 +9,7 @@ html, body, #root, .container {
 }
 
 .data {
-  .top {
+  .top-u {
     @include rect(100%, 1.54rem);
     @include flexbox();
     @include justify-content(space-between);
@@ -67,7 +67,7 @@ html, body, #root, .container {
 
 .mycontent {
   @include rect(100%, auto);
-  .top {
+  .top-u {
     @include rect(100%, 2.19rem);
     @include background-color(#ECECEC);
     @include margin(.03rem 0 .11rem 0);

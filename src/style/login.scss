@@ -6,7 +6,7 @@ html, body, #root, .container {
 .content {
   @include rect(100%, 100%);
   overflow: auto;
-  background: #4A94F9;
+  // background: #4A94F9;
 }
 
 .top {

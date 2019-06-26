@@ -12,7 +12,7 @@ html, body, #root, .container {
   @include rect(100%, 1.4rem);
   @include background-color(#E8E8E8);
   padding:.2rem 0;
-  .top {
+  .top-o {
     @include flexbox();
     @include justify-content();
     @include text-color(#5E5E5E);
@@ -29,7 +29,7 @@ html, body, #root, .container {
       @include padding(0 0 0 .5rem);
       @include font-size(.14rem);
     }
-    .center {
+    .center-o {
       @include rect(50px, 50px);
       @include border-radius(50%);
       @include background-color(#D5D5D5);
@@ -60,7 +60,7 @@ html, body, #root, .container {
   padding:.1rem .17rem .3rem ;
   .header {
     @include rect(100%, .2rem);
-    .top {
+    .top-o {
       @include flexbox();
       @include justify-content(space-between);
       .left {
@@ -134,7 +134,7 @@ html, body, #root, .container {
         @include flexbox();
         @include flex-direction(column);
         @include align-items();
-        .top {
+        .top-o {
           @include font-size(10px);
           @include text-color(#5E5E5E);
         }
@@ -154,7 +154,7 @@ html, body, #root, .container {
     @include margin(.3rem 0 0 0);
     .myhead {
       padding:0 .17rem;
-      .top {
+      .top-o {
         @include flexbox();
         @include justify-content(space-between);
         @include padding(0 0 .1rem 0);

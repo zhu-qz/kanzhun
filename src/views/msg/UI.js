@@ -22,7 +22,7 @@ class Com extends Component {
               <div className = 'left'>
                 <div className = 'img'></div>
                 <div className = 'box'>
-                  <div className = 'top'>待处理事项</div>
+                  <div className = 'top-m'>待处理事项</div>
                   <div className = 'center'>3个请求待处理。</div>
                   <div className = 'bottom'>
                     <ul>
@@ -40,8 +40,8 @@ class Com extends Component {
             <ul>
               <li>
                 <div className = 'img'></div>
-                <div className = 'myinfo'>
-                  <div className = 'top'>
+                <div className = 'myinfo-m'>
+                  <div className = 'top-m'>
                     <p>看准小助手</p>
                     <span>官方</span>
                   </div>
@@ -50,8 +50,8 @@ class Com extends Component {
               </li>
               <li>
                 <div className = 'img'></div>
-                <div className = 'myinfo'>
-                  <div className = 'top'>
+                <div className = 'myinfo-m'>
+                  <div className = 'top-m'>
                     <p>看准小助手</p>
                     <span>官方</span>
                   </div>

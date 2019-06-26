@@ -10,7 +10,7 @@ class Com extends Component {
       <div className = 'container'>
         <div className = 'content'>
           <div className = 'data'>
-            <header className = 'top'>
+            <header className = 'top-u'>
               <div className = 'left'>
                 <div className = 'img'></div>
                 <div className = 'my'>
@@ -29,7 +29,7 @@ class Com extends Component {
             </div>
           </div>
           <div className = 'mycontent'>
-            <div className = 'top'>
+            <div className = 'top-u'>
               <ul>
                 <li><div className = 'iconfont icon-bq'></div><p>我的钱包</p></li>
                 <li><div className = 'iconfont icon-bq'></div><p>我的求助、认领</p></li>

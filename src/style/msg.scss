@@ -94,10 +94,10 @@ html, body, #root, .container {
         @include border-radius(50%);
         @include background-color(#EEEEEE);
       }
-      .myinfo {
+      .myinfo-m {
         float: left;
         @include padding(0 0 0 .1rem);
-        .top {
+        .top-m {
           @include flexbox();
           @include padding(0 0 .1rem 0);
           p {
