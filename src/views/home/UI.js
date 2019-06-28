@@ -19,6 +19,7 @@ class Com extends Component {
             <div className='com-list'>
               <ul>
                 <li>
+                  <img src=''/>
                   <p>看公司</p>
                 </li>
                 <li>
