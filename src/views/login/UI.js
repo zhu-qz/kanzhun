@@ -23,7 +23,7 @@ class Com extends Component {
       <div className = 'container'>
         <div className = 'content'>
           <div className= 'top'>
-            <div className = 'img'><img src = { Login1 }/></div>
+            <div className = 'img'><img src = { Login1 } alt = ''/></div>
             {/* <p>KAN ZHUN</p> */}
           </div>
           <div className= 'center' onClick = { 
