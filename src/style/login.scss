@@ -15,8 +15,10 @@ html, body, #root, .container {
   @include text-align();
   .img {
     margin:0 auto;
-    @include rect(2rem, 1.2rem);
-    @include background-color(#E1E1E1);
+    @include rect(.94rem, .94rem);
+    // @include border(1px solid #fff);
+    @include border-radius(50%);
+    // @include background-color(#E1E1E1);
   }
   p {
     @include font-size(18px);

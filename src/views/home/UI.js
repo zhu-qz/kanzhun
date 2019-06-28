@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './home.scss';
+import '@/style/home.scss';
 
 class Com extends Component {
   componentDidMount () {
