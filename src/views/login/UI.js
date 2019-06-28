@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '@/style/login.scss';
 import TelLogin from '@/components/login/telLogin';
 import CodeLogin from '@/components/login/codeLogin';
+import Login1 from '@/images/login/login.png';
 
 class Com extends Component {
   constructor(props) {
@@ -22,8 +23,8 @@ class Com extends Component {
       <div className = 'container'>
         <div className = 'content'>
           <div className= 'top'>
-            <div className = 'img'><img src='@/images/login/图层1.png'/></div>
-            <p>KAN ZHUN</p>
+            <div className = 'img'><img src = { Login1 }/></div>
+            {/* <p>KAN ZHUN</p> */}
           </div>
           <div className= 'center' onClick = { 
             this.Login.bind(this)
