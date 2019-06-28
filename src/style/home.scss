@@ -93,7 +93,7 @@ body,
             color: #5e5e5e;
             float: left;
         }
-        a {
+        .a-h {
             float: right;
             color: #828282;
             font: .12rem/.3rem "";
@@ -189,7 +189,7 @@ body,
         left: .17rem;
         bottom: .16rem;
         @include padding(0 .4rem 0 0);
-        a {
+        a-h {
             color: #686767;
             span {
                 float: left;
@@ -257,7 +257,7 @@ body,
         left: .17rem;
         bottom: .16rem;
         @include padding(0 .4rem 0 0);
-        a {
+        .a-h {
             color: #686767;
             span {
                 float: left;

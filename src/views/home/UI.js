@@ -37,7 +37,7 @@ class Com extends Component {
                 <div className='introduce'>
                     <div className='intro-top'>
                         <h3>推荐</h3>
-                        <a href='#'><span>换一批</span></a>
+                        <p href='#' className='a-h'><span>换一批</span></p>
                     </div>
                     <div className='intro-middle'>
                         <div className='iml'>
@@ -55,7 +55,7 @@ class Com extends Component {
                 <div className='introduce'>
                     <div className='intro-top'>
                         <h3>推荐</h3>
-                        <a><span>换一批</span></a>
+                        <p className='a-h'><span>换一批</span></p>
                     </div>
                     <div className='intro-middle'>
                         <div className='iml'>
@@ -97,7 +97,7 @@ class Com extends Component {
                     </li>
                 </ul>
 
-                <div className='all-rank'><a><span>查看全部排行榜</span><i className='iconfont icon-right'></i></a></div>
+                <div className='all-rank'><p className='a-h'><span>查看全部排行榜</span><i className='iconfont icon-right'></i></p></div>
             </div>
             <div className='cor-special'>
                 <div className='cor-top'>
@@ -130,7 +130,7 @@ class Com extends Component {
                         <div className='img'>图片</div>
                     </div>
                 </div>
-            <div className='all-special'><a href='#'><span>查看全部专题</span><i>图标3</i></a></div>
+            <div className='all-special'><p href='#' className='a-h'><span>查看全部专题</span><i>图标3</i></p></div>
             </div>
 
         </div>
